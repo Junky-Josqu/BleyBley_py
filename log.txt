@@ -1,33 +1,33 @@
-Thu Apr 27 21:19:37 2017
+Thu Apr 27 21:45:57 2017
 Linux-4.4.0-75-generic-x86_64-with-debian-stretch-sid
 Ren'Py 6.99.12.4.2187
  
 
-Bootstrap to the start of init.init took 0.10s
+Bootstrap to the start of init.init took 0.09s
 Early init took 0.01s
 Loader init took 0.01s
 Loading error handling took 0.03s
-Loading script took 0.23s
+Loading script took 0.20s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.12s
+Running init code took 0.10s
 Loading analysis data took 0.06s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to '/home/john/.renpy/backups/BleyBley_py':
-Dump and make backups. took 0.08s
+Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.24s
+Creating interface object took 0.15s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.08s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.04s
 Prepare screens took 0.04s
-Save pyanalysis. took 0.13s
+Save pyanalysis. took 0.15s
 Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
@@ -416,55 +416,17 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.54771590233s
+Total time until interface ready: 1.42369699478s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.017577 seconds.
-- Frame drawn at 0.032462 seconds.
-- Frame drawn at 0.049753 seconds.
-- Frame drawn at 0.072787 seconds.
-- 0.072787 seconds to render 5 frames.
-Traceback (most recent call last):
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/execution.py", line 438, in run
-    node.execute()
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/python.py", line 1719, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/_layout/screen_main_menu.rpym", line 30, in <module>
-    ui.interact()
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/ui.py", line 285, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 2526, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 2793, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 495, in visit_all
-    d.visit_all(callback)
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 495, in visit_all
-    d.visit_all(callback)
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 495, in visit_all
-    d.visit_all(callback)
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/screen.py", line 399, in visit_all
-    callback(self)
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 2793, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/screen.py", line 409, in per_interact
-    self.update()
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/screen.py", line 578, in update
-    self.screen.function(**self.scope)
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/sl2/slast.py", line 1966, in __call__
-    self.prepare_screen()
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/sl2/slast.py", line 1918, in prepare_screen
-    self.const_ast.prepare(self.const_ast.analysis)
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/sl2/slast.py", line 325, in prepare
-    i.prepare(analysis)
-  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/sl2/slast.py", line 1578, in prepare
-    raise Exception("A screen named {} does not exist.".format(self.target))
-Exception: A screen named navigation does not exist.
-Bootstrap to the start of init.init took 36.01s
+- Frame drawn at 0.016221 seconds.
+- Frame drawn at 0.032483 seconds.
+- Frame drawn at 0.049454 seconds.
+- Frame drawn at 0.074568 seconds.
+- 0.074568 seconds to render 5 frames.
+Bootstrap to the start of init.init took 24.61s
 Early init took 0.00s
-Loader init took 0.02s
+Loader init took 0.01s
 Loading error handling took 0.03s
 Loading script took 0.19s
 Loading persistent took 0.00s
@@ -474,7 +436,7 @@ Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to '/home/john/.renpy/backups/BleyBley_py':
-Dump and make backups. took 0.08s
+Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
@@ -484,9 +446,9 @@ Init translation took 0.04s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.08s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.14s
+Save screen analysis took 0.04s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
@@ -875,19 +837,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 36.9620029926s
+Total time until interface ready: 25.3710010052s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.015555 seconds.
-- Frame drawn at 0.032016 seconds.
-- Frame drawn at 0.048578 seconds.
-- Frame drawn at 0.065163 seconds.
-- 0.065163 seconds to render 5 frames.
-
-primary display bounds: (0, 0, 3840, 1080)
-Windowed mode.
-Screen sizes: virtual=(1066, 600) physical=(1920, 1005) drawable=(1920, 1005)
-
-primary display bounds: (0, 0, 3840, 1080)
-Windowed mode.
-Screen sizes: virtual=(1066, 600) physical=(959, 540) drawable=(959, 540)
+- Frame drawn at 0.017522 seconds.
+- Frame drawn at 0.032327 seconds.
+- Frame drawn at 0.049202 seconds.
+- Frame drawn at 0.065649 seconds.
+- 0.065649 seconds to render 5 frames.

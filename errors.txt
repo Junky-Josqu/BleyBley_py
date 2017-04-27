@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 597: use statement expects a non-empty block.
-    use game_menu(title):
-                         ^
+File "game/screens.rpy", line 172: expected a keyword argument or end of line.
+    style_prefix: "navigation"
+                ^
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187
