@@ -1,7 +1,5 @@
 #For different Modules
-def file():
-    x = '~/.mbwarband/last_module_warband'
-    return x
+file = open('~/.mbwarband/last_module_warbandtxt','r+') 
 
 def native():
     module = 'Native'
