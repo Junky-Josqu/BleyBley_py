@@ -1,21 +1,49 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 5, in <module>
-    $ launcher.game.start()
-AttributeError: 'module' object has no attribute 'game'
+  File "game/screens.rpy", line 164, in prepare_screen
+    screen main_menu():
+  File "game/screens.rpy", line 164, in prepare
+    screen main_menu():
+Exception: A screen named navigation does not exist.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/home/john/script.rpyc", line 5, in script
+  File "/home/john/_layout/screen_main_menu.rpymc", line 28, in script
   File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/ast.py", line 814, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/python.py", line 1719, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/script.rpy", line 5, in <module>
-    $ launcher.game.start()
-AttributeError: 'module' object has no attribute 'game'
+  File "renpy/common/_layout/screen_main_menu.rpym", line 30, in <module>
+    ui.interact()
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/ui.py", line 285, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 2526, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 2793, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 495, in visit_all
+    d.visit_all(callback)
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 495, in visit_all
+    d.visit_all(callback)
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 495, in visit_all
+    d.visit_all(callback)
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/screen.py", line 399, in visit_all
+    callback(self)
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/core.py", line 2793, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/screen.py", line 409, in per_interact
+    self.update()
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/display/screen.py", line 578, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 164, in prepare_screen
+    screen main_menu():
+  File "game/screens.rpy", line 164, in prepare
+    screen main_menu():
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/sl2/slast.py", line 1578, in prepare
+    raise Exception("A screen named {} does not exist.".format(self.target))
+Exception: A screen named navigation does not exist.
 
 Linux-4.4.0-75-generic-x86_64-with-debian-stretch-sid
 Ren'Py 6.99.12.4.2187
