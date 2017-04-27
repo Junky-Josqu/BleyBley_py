@@ -1,4 +1,6 @@
 import sys
+import Tkinter as tk
+
 from lib import config
 #from lib import cheats
 from lib import module
@@ -13,3 +15,9 @@ def set_module_viking():
     module.file.write(module.viking_conquest() )
 def set_module_napoleonic():
     module.file.write(module.napoleonic_wars() )
+
+root = tk.Tk()
+root.title("Bley-Bley Launcher")
+
+
+root.mainloop()
