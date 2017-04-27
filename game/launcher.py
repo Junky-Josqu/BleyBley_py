@@ -2,6 +2,7 @@ import sys
 from lib import conf
 from lib import game
 from lib import module
+from lib import config
 
 def show_module():
     x = module.file.read()
