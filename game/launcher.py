@@ -2,7 +2,7 @@ import sys
 from lib import config
 #from lib import cheats
 from lib import module
-import game
+from lib import game
 
 def show_module():
     x = module.file.read()
