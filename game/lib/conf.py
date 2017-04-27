@@ -1,1 +1,1 @@
-file = '~/.mbwarband/rgl_config.txt'
+file = file.open('~/.mbwarband/last_module_warbandtxt','r+') 
