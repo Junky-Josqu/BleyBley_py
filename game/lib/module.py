@@ -1,5 +1,11 @@
+# -*- coding: iso-8859-1 -*-
 #For different Modules
-file = open('~/.mbwarband/last_module_warbandtxt','r+') 
+
+from os.path import expanduser
+home = expanduser("~")
+x = '%s/.mbwarband/last_module_warband' % (home)
+file = open(x,'r+')
+
 
 def native():
     module = 'Native'

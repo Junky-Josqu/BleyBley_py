@@ -1,8 +1,7 @@
 import sys
-from lib import conf
-from lib import game
-from lib import module
 from lib import config
+#from lib import cheats
+from lib import module
 
 def show_module():
     x = module.file.read()

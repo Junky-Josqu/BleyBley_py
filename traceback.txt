@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 5, in <module>
+    $ launcher.game.start()
+AttributeError: 'module' object has no attribute 'game'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "/home/john/script.rpyc", line 5, in script
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/ast.py", line 814, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/john/Dokumente/.renpy-6.99.12.3-sdk/renpy/python.py", line 1719, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 5, in <module>
+    $ launcher.game.start()
+AttributeError: 'module' object has no attribute 'game'
+
+Linux-4.4.0-75-generic-x86_64-with-debian-stretch-sid
+Ren'Py 6.99.12.4.2187
+Bley-Bley-Launcher 1.0
